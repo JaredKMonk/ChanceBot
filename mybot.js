@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require("./config.json");
 const Chance = require("chance");
 const chance = new Chance();
 
@@ -26,4 +27,4 @@ client.on("message", (message) => {
     }
 });
 
-client.login("NTI5Nzk3NzU3ODE3NTg1NjY2.Dw2GCg.bN5Xo9qYpcxIO5ixX1phVvtp7YU");
+client.login(config.token);
